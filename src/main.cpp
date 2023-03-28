@@ -47,10 +47,17 @@ Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
 // Adafruit_TFTLCD tft;
 
 
-
+//Displays intro GIF
 unsigned long display_gif() {
 
   
+
+}
+
+//Enters home screen menu
+unsigned long home_screen() {
+
+  tft.fillScreen(MAGENTA);
 
 }
 

@@ -6,7 +6,7 @@
 
 // The following setup code was taken from "graphicstest.ino"
 // lib\TFTLCD-Library-master\examples\graphicstest\graphicstest.ino
-#pragma region
+#pragma region setup
 // The control pins for the LCD can be assigned to any digital or
 // analog pins...but we'll use the analog pins as this allows us to
 // double up the pins with the touch screen (see the TFT paint example).
@@ -40,10 +40,10 @@
 #define YELLOW 0xFFE0
 #define WHITE 0xFFFF
 
-Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
+extern Adafruit_TFTLCD tft;
 // If using the shield, all control and data lines are fixed, and
 // a simpler declaration can optionally be used:
 // Adafruit_TFTLCD tft;
 
-#pragma endregion
+#pragma endregion setup
 // End of reused code

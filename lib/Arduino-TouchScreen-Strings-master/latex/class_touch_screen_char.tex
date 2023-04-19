@@ -1,0 +1,170 @@
+\hypertarget{class_touch_screen_char}{\section{Touch\+Screen\+Char Class Reference}
+\label{class_touch_screen_char}\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+}
+
+
+Subclass of \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text}. Abstract class used for drawing char's to the touch screen.  
+
+
+
+
+{\ttfamily \#include $<$Touch\+Screen\+Strings.\+h$>$}
+
+Inheritance diagram for Touch\+Screen\+Char\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_touch_screen_char}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_touch_screen_char_a712dee575d947e58a776be559d33dc3f}{\hyperlink{class_touch_screen_char_a712dee575d947e58a776be559d33dc3f}{Touch\+Screen\+Char} ()}\label{class_touch_screen_char_a712dee575d947e58a776be559d33dc3f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} subclass. \end{DoxyCompactList}\item 
+\hyperlink{class_touch_screen_char_a16271426fbf961392b6439c42c110c67}{Touch\+Screen\+Char} (\hyperlink{class_touch_screen_char}{Touch\+Screen\+Char} \&other\+Touch\+Screen\+Char)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} subclass. \end{DoxyCompactList}\item 
+\hyperlink{class_touch_screen_char_a2a0a141a1d9b65b54031eea6317c2a63}{Touch\+Screen\+Char} (char my\+Text, int my\+X\+Start, int my\+Y\+Start, int my\+Font\+Size, unsigned int my\+Text\+Color)
+\begin{DoxyCompactList}\small\item\em Parameter constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} superclass. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_char_a1cd1be7f6a6f0b7eefe198c70f799dce}{set\+Values} (char my\+Text, int my\+X\+Start, int my\+Y\+Start, int my\+Font\+Size, unsigned int my\+Text\+Color)
+\begin{DoxyCompactList}\small\item\em Sets the char, cooordinates, font size, and char color. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_char_a3193c7b27aee874a21cdf86a39da6b61}{set\+Text} (char my\+Text)
+\begin{DoxyCompactList}\small\item\em Sets the text of the char instance. \end{DoxyCompactList}\item 
+const char \hyperlink{class_touch_screen_char_a14b7f8744d259592fe38522b131ca7c8}{get\+Text} ()
+\begin{DoxyCompactList}\small\item\em Returns the char of the char instance. \end{DoxyCompactList}\item 
+\hypertarget{class_touch_screen_char_a1c55410824b2adb0a480204366f9da01}{void \hyperlink{class_touch_screen_char_a1c55410824b2adb0a480204366f9da01}{draw\+Text} ()}\label{class_touch_screen_char_a1c55410824b2adb0a480204366f9da01}
+
+\begin{DoxyCompactList}\small\item\em Uses the Seeed Studio library to draw the char. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_char_a099d277a6fc4510e93f02089070ca6f2}{text\+Button\+Display} ()
+\begin{DoxyCompactList}\small\item\em Highlights the button text when pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Subclass of \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text}. Abstract class used for drawing char's to the touch screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_touch_screen_char_a16271426fbf961392b6439c42c110c67}{\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\subsubsection[{Touch\+Screen\+Char}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Screen\+Char\+::\+Touch\+Screen\+Char (
+\begin{DoxyParamCaption}
+\item[{{\bf Touch\+Screen\+Char} \&}]{other\+Touch\+Screen\+Char}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_char_a16271426fbf961392b6439c42c110c67}
+
+
+Copy constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} subclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Touch\+Screen\+Char} & The char instance that is being copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_char_a2a0a141a1d9b65b54031eea6317c2a63}{\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\subsubsection[{Touch\+Screen\+Char}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Screen\+Char\+::\+Touch\+Screen\+Char (
+\begin{DoxyParamCaption}
+\item[{char}]{my\+Text, }
+\item[{int}]{my\+X\+Start, }
+\item[{int}]{my\+Y\+Start, }
+\item[{int}]{my\+Font\+Size, }
+\item[{unsigned int}]{my\+Text\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_char_a2a0a141a1d9b65b54031eea6317c2a63}
+
+
+Parameter constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} superclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text} & The char that is to be drawn. \\
+\hline
+{\em my\+X\+Start} & The x-\/coordinate for the char instance. \\
+\hline
+{\em my\+Y\+Start} & The y-\/coordinate for the char instance. \\
+\hline
+{\em my\+Font\+Size} & The font size of the char instance. \\
+\hline
+{\em my\+Text\+Color} & The color of the char instance. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_touch_screen_char_a14b7f8744d259592fe38522b131ca7c8}{\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\subsubsection[{get\+Text}]{\setlength{\rightskip}{0pt plus 5cm}const char Touch\+Screen\+Char\+::get\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_char_a14b7f8744d259592fe38522b131ca7c8}
+
+
+Returns the char of the char instance. 
+
+\begin{DoxyReturn}{Returns}
+The char that is to be drawn. 
+\end{DoxyReturn}
+\hypertarget{class_touch_screen_char_a3193c7b27aee874a21cdf86a39da6b61}{\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\subsubsection[{set\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Char\+::set\+Text (
+\begin{DoxyParamCaption}
+\item[{char}]{my\+Text}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_char_a3193c7b27aee874a21cdf86a39da6b61}
+
+
+Sets the text of the char instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text} & The char that is to be drawn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_char_a1cd1be7f6a6f0b7eefe198c70f799dce}{\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!set\+Values@{set\+Values}}
+\index{set\+Values@{set\+Values}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\subsubsection[{set\+Values}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Char\+::set\+Values (
+\begin{DoxyParamCaption}
+\item[{char}]{my\+Text, }
+\item[{int}]{my\+X\+Start, }
+\item[{int}]{my\+Y\+Start, }
+\item[{int}]{my\+Font\+Size, }
+\item[{unsigned int}]{my\+Text\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_char_a1cd1be7f6a6f0b7eefe198c70f799dce}
+
+
+Sets the char, cooordinates, font size, and char color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text} & The char that is to be drawn. \\
+\hline
+{\em my\+X\+Start} & The x-\/coordinate for the char instance. \\
+\hline
+{\em my\+Y\+Start} & The y-\/coordinate for the char instance. \\
+\hline
+{\em my\+Font\+Size} & The font size of the char instance. \\
+\hline
+{\em my\+Text\+Color} & The color of the char instance. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_char_a099d277a6fc4510e93f02089070ca6f2}{\index{Touch\+Screen\+Char@{Touch\+Screen\+Char}!text\+Button\+Display@{text\+Button\+Display}}
+\index{text\+Button\+Display@{text\+Button\+Display}!Touch\+Screen\+Char@{Touch\+Screen\+Char}}
+\subsubsection[{text\+Button\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Char\+::text\+Button\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_char_a099d277a6fc4510e93f02089070ca6f2}
+
+
+Highlights the button text when pressed. 
+
+$<$ Sets the color to red
+
+$<$ Sets the color to white 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Touch\+Screen\+Strings.\+h\item 
+Touch\+Screen\+Strings.\+cpp\end{DoxyCompactItemize}

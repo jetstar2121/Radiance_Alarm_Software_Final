@@ -2,7 +2,8 @@
 #include <Adafruit_GFX.h>    // Graphics Library
 #include <Adafruit_TFTLCD.h> // Hardware Library
 #include <SD.h>              // SD Card Library
-
+#include <URTouch.h>         // Touch Screen Library
+#include <TouchScreen.h>
 
 // The following setup code was taken from "graphicstest.ino"
 // lib\TFTLCD-Library-master\examples\graphicstest\graphicstest.ino
@@ -39,8 +40,14 @@
 #define MAGENTA 0xF81F
 #define YELLOW 0xFFE0
 #define WHITE 0xFFFF
+#define ORANGE 0xFBE0 
+
+#define BOXSIZE 40
+#define PENRADIUS 3
+
 
 extern Adafruit_TFTLCD tft;
+extern URTouch touchscreen;
 // If using the shield, all control and data lines are fixed, and
 // a simpler declaration can optionally be used:
 // Adafruit_TFTLCD tft;

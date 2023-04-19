@@ -1,0 +1,185 @@
+\hypertarget{class_touch_screen_string}{\section{Touch\+Screen\+String Class Reference}
+\label{class_touch_screen_string}\index{Touch\+Screen\+String@{Touch\+Screen\+String}}
+}
+
+
+Subclass of \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text}. Abstract class for drawing strings to the touch screen.  
+
+
+
+
+{\ttfamily \#include $<$Touch\+Screen\+Strings.\+h$>$}
+
+Inheritance diagram for Touch\+Screen\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_touch_screen_string}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_touch_screen_string_ac6041c6c845b2286efee96cbc4b5473f}{Touch\+Screen\+String} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} subclass. \end{DoxyCompactList}\item 
+\hyperlink{class_touch_screen_string_a32ccd512fd5ef6a1aefa14d1e7552afb}{Touch\+Screen\+String} (\hyperlink{class_touch_screen_string}{Touch\+Screen\+String} \&other\+Touch\+Screen\+String)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} superclass. \end{DoxyCompactList}\item 
+\hyperlink{class_touch_screen_string_a225634c4816f8988343c9a9491cf27fb}{Touch\+Screen\+String} (char $\ast$my\+Text, int my\+X\+Start, int my\+Y\+Start, int my\+Font\+Size, unsigned int my\+Text\+Color)
+\begin{DoxyCompactList}\small\item\em Parameter constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} superclass. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_string_ad797bc5369aaace58de46bca39ae83dd}{set\+Values} (char $\ast$my\+Text, int my\+X\+Start, int my\+Y\+Start, int my\+Font\+Size, unsigned int my\+Text\+Color)
+\begin{DoxyCompactList}\small\item\em Sets the text, coordinates, font size, and text color of the instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_string_a7d32e2262e4ea1009b029c0ae8b45897}{set\+Text} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Sets the text of the string instance. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_touch_screen_string_aadd13b945c6567a321a73f9e4220ee73}{get\+Text} ()
+\begin{DoxyCompactList}\small\item\em Returns the text of the string instace. \end{DoxyCompactList}\item 
+\hypertarget{class_touch_screen_string_a31873d10d7c6d9905048b76b969fa978}{void \hyperlink{class_touch_screen_string_a31873d10d7c6d9905048b76b969fa978}{draw\+Text} ()}\label{class_touch_screen_string_a31873d10d7c6d9905048b76b969fa978}
+
+\begin{DoxyCompactList}\small\item\em Uses the T\+F\+T library to draw the string instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_string_a56d10098496bd88e0c60daf543447576}{text\+Button\+Display} ()
+\begin{DoxyCompactList}\small\item\em Highlights the button text when pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Subclass of \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text}. Abstract class for drawing strings to the touch screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_touch_screen_string_ac6041c6c845b2286efee96cbc4b5473f}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\index{Touch\+Screen\+String@{Touch\+Screen\+String}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{Touch\+Screen\+String}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Screen\+String\+::\+Touch\+Screen\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_ac6041c6c845b2286efee96cbc4b5473f}
+
+
+Default constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} subclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text that is to be drawn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_string_a32ccd512fd5ef6a1aefa14d1e7552afb}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\index{Touch\+Screen\+String@{Touch\+Screen\+String}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{Touch\+Screen\+String}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Screen\+String\+::\+Touch\+Screen\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Touch\+Screen\+String} \&}]{other\+Touch\+Screen\+String}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_a32ccd512fd5ef6a1aefa14d1e7552afb}
+
+
+Copy constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} superclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Touch\+Screen\+String} & The string instance that is to be copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_string_a225634c4816f8988343c9a9491cf27fb}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\index{Touch\+Screen\+String@{Touch\+Screen\+String}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{Touch\+Screen\+String}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Screen\+String\+::\+Touch\+Screen\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{my\+Text, }
+\item[{int}]{my\+X\+Start, }
+\item[{int}]{my\+Y\+Start, }
+\item[{int}]{my\+Font\+Size, }
+\item[{unsigned int}]{my\+Text\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_a225634c4816f8988343c9a9491cf27fb}
+
+
+Parameter constructor for the \hyperlink{class_touch_screen_string}{Touch\+Screen\+String} superclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text} & The text that is to be drawn. \\
+\hline
+{\em my\+X\+Start} & The x-\/coordinate for the text instance. \\
+\hline
+{\em my\+Y\+Start} & The y-\/coordinate for the text instance. \\
+\hline
+{\em my\+Font\+Size} & The font size of the text instance. \\
+\hline
+{\em my\+Text\+Color} & The color of the text instance. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_touch_screen_string_aadd13b945c6567a321a73f9e4220ee73}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{get\+Text}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Touch\+Screen\+String\+::get\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_aadd13b945c6567a321a73f9e4220ee73}
+
+
+Returns the text of the string instace. 
+
+\begin{DoxyReturn}{Returns}
+text The text that is to be drawn. 
+\end{DoxyReturn}
+\hypertarget{class_touch_screen_string_a7d32e2262e4ea1009b029c0ae8b45897}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{set\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+String\+::set\+Text (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{my\+Text}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_a7d32e2262e4ea1009b029c0ae8b45897}
+
+
+Sets the text of the string instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text} & The text that is to be drawn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_string_ad797bc5369aaace58de46bca39ae83dd}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!set\+Values@{set\+Values}}
+\index{set\+Values@{set\+Values}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{set\+Values}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+String\+::set\+Values (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{my\+Text, }
+\item[{int}]{my\+X\+Start, }
+\item[{int}]{my\+Y\+Start, }
+\item[{int}]{my\+Font\+Size, }
+\item[{unsigned int}]{my\+Text\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_ad797bc5369aaace58de46bca39ae83dd}
+
+
+Sets the text, coordinates, font size, and text color of the instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text} & The text that is to be drawn. \\
+\hline
+{\em my\+X\+Start} & The x-\/coordinate for the text instance. \\
+\hline
+{\em my\+Y\+Start} & The y-\/coordinate for the text instance. \\
+\hline
+{\em my\+Font\+Size} & The font size of the text instance. \\
+\hline
+{\em my\+Text\+Color} & The color of the text instance. Default color is W\+H\+I\+T\+E. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_string_a56d10098496bd88e0c60daf543447576}{\index{Touch\+Screen\+String@{Touch\+Screen\+String}!text\+Button\+Display@{text\+Button\+Display}}
+\index{text\+Button\+Display@{text\+Button\+Display}!Touch\+Screen\+String@{Touch\+Screen\+String}}
+\subsubsection[{text\+Button\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+String\+::text\+Button\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_string_a56d10098496bd88e0c60daf543447576}
+
+
+Highlights the button text when pressed. 
+
+$<$ Sets the color to red
+
+$<$ Sets the color to white 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Touch\+Screen\+Strings.\+h\item 
+Touch\+Screen\+Strings.\+cpp\end{DoxyCompactItemize}

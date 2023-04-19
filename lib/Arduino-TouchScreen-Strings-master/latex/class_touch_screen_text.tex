@@ -1,0 +1,214 @@
+\hypertarget{class_touch_screen_text}{\section{Touch\+Screen\+Text Class Reference}
+\label{class_touch_screen_text}\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+}
+
+
+Base class for drawing text to the touch screen.  
+
+
+
+
+{\ttfamily \#include $<$Touch\+Screen\+Strings.\+h$>$}
+
+Inheritance diagram for Touch\+Screen\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_touch_screen_text}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_touch_screen_text_ab4eb34ba6e6d41dbcbc00377f497efb8}{\hyperlink{class_touch_screen_text_ab4eb34ba6e6d41dbcbc00377f497efb8}{Touch\+Screen\+Text} ()}\label{class_touch_screen_text_ab4eb34ba6e6d41dbcbc00377f497efb8}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for the \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text} superclass. \end{DoxyCompactList}\item 
+\hypertarget{class_touch_screen_text_ab1d335963b16d5c06182002d32b485dc}{{\bfseries Touch\+Screen\+Text} (\hyperlink{class_touch_screen_text}{Touch\+Screen\+Text} \&other\+Touch\+Screen\+Text)}\label{class_touch_screen_text_ab1d335963b16d5c06182002d32b485dc}
+
+\item 
+\hyperlink{class_touch_screen_text_a4603c93a9419c4a7ab81b24d7a925a7b}{Touch\+Screen\+Text} (int, int, int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Parameter constructor for the \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text} superclass. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_text_ad93fb5b78ee2578fe3730210ba172ee7}{set\+Text\+Coord} (int, int)
+\begin{DoxyCompactList}\small\item\em Sets the coordinates of the text. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_text_ab276b0e4f90739d052e521d0e2fe5cc2}{set\+Font\+Size} (int my\+Font\+Size=2)
+\begin{DoxyCompactList}\small\item\em Sets the font size of the text. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_text_a5a1bbd3e035ec114da0a341dad341461}{set\+Text\+Color} (unsigned int my\+Text\+Color=0xffff)
+\begin{DoxyCompactList}\small\item\em Sets the color of the text. \end{DoxyCompactList}\item 
+const int \hyperlink{class_touch_screen_text_ad4bf2d307ed2c96eed40969cdbdf4bcc}{get\+X\+Start} ()
+\begin{DoxyCompactList}\small\item\em Gets the xcoordinate of the text. \end{DoxyCompactList}\item 
+const int \hyperlink{class_touch_screen_text_a50372422c5ddb6c9b9f689a1e95e92ae}{get\+Y\+Start} ()
+\begin{DoxyCompactList}\small\item\em Gets the ycoordinate of the text. \end{DoxyCompactList}\item 
+const int \hyperlink{class_touch_screen_text_a34115eeb243b200e8546d7b203e8be54}{get\+Font\+Size} ()
+\begin{DoxyCompactList}\small\item\em Gets the font size of the text. \end{DoxyCompactList}\item 
+const int \hyperlink{class_touch_screen_text_ab1ba5d5526f00d925e5b0239901b7d50}{get\+Text\+Color} ()
+\begin{DoxyCompactList}\small\item\em Gets the font color of the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_touch_screen_text_af22a7ca72947722e7ff76ec0750dc851}{int {\bfseries xstart}}\label{class_touch_screen_text_af22a7ca72947722e7ff76ec0750dc851}
+
+\item 
+\hypertarget{class_touch_screen_text_a779b5c6ee8be737c4fbfc7ad002c5854}{int {\bfseries ystart}}\label{class_touch_screen_text_a779b5c6ee8be737c4fbfc7ad002c5854}
+
+\item 
+\hypertarget{class_touch_screen_text_a098422c325ce23c6d28d2b72ffb52a1a}{int \hyperlink{class_touch_screen_text_a098422c325ce23c6d28d2b72ffb52a1a}{font\+Size}}\label{class_touch_screen_text_a098422c325ce23c6d28d2b72ffb52a1a}
+
+\begin{DoxyCompactList}\small\item\em Coordinates of the text. \end{DoxyCompactList}\item 
+\hypertarget{class_touch_screen_text_a0b555c473dff7436a79c836926235217}{unsigned int \hyperlink{class_touch_screen_text_a0b555c473dff7436a79c836926235217}{text\+Color}}\label{class_touch_screen_text_a0b555c473dff7436a79c836926235217}
+
+\begin{DoxyCompactList}\small\item\em Size of the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for drawing text to the touch screen. 
+
+Parameter constructor for the \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text} superclass.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Touch\+Screen\+Text} & The text that is to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_touch_screen_text_a4603c93a9419c4a7ab81b24d7a925a7b}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{Touch\+Screen\+Text}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Screen\+Text\+::\+Touch\+Screen\+Text (
+\begin{DoxyParamCaption}
+\item[{int}]{my\+X\+Start, }
+\item[{int}]{my\+Y\+Start, }
+\item[{int}]{my\+Font\+Size, }
+\item[{unsigned int}]{my\+Text\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_a4603c93a9419c4a7ab81b24d7a925a7b}
+
+
+Parameter constructor for the \hyperlink{class_touch_screen_text}{Touch\+Screen\+Text} superclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+X\+Start} & The x-\/coordinate for the text instance. \\
+\hline
+{\em my\+Y\+Start} & The y-\/coordinate for the text instance. \\
+\hline
+{\em my\+Font\+Size} & The font size of the text instance. \\
+\hline
+{\em my\+Text\+Color} & The color of the text instance. Default color is W\+H\+I\+T\+E. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_touch_screen_text_a34115eeb243b200e8546d7b203e8be54}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!get\+Font\+Size@{get\+Font\+Size}}
+\index{get\+Font\+Size@{get\+Font\+Size}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{get\+Font\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const int Touch\+Screen\+Text\+::get\+Font\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_a34115eeb243b200e8546d7b203e8be54}
+
+
+Gets the font size of the text. 
+
+\begin{DoxyReturn}{Returns}
+The font size for the text instance. 
+\end{DoxyReturn}
+\hypertarget{class_touch_screen_text_ab1ba5d5526f00d925e5b0239901b7d50}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!get\+Text\+Color@{get\+Text\+Color}}
+\index{get\+Text\+Color@{get\+Text\+Color}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{get\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}const int Touch\+Screen\+Text\+::get\+Text\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_ab1ba5d5526f00d925e5b0239901b7d50}
+
+
+Gets the font color of the text. 
+
+\begin{DoxyReturn}{Returns}
+The font color for the text instance. 
+\end{DoxyReturn}
+\hypertarget{class_touch_screen_text_ad4bf2d307ed2c96eed40969cdbdf4bcc}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!get\+X\+Start@{get\+X\+Start}}
+\index{get\+X\+Start@{get\+X\+Start}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{get\+X\+Start}]{\setlength{\rightskip}{0pt plus 5cm}const int Touch\+Screen\+Text\+::get\+X\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_ad4bf2d307ed2c96eed40969cdbdf4bcc}
+
+
+Gets the xcoordinate of the text. 
+
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate for the text instance. 
+\end{DoxyReturn}
+\hypertarget{class_touch_screen_text_a50372422c5ddb6c9b9f689a1e95e92ae}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!get\+Y\+Start@{get\+Y\+Start}}
+\index{get\+Y\+Start@{get\+Y\+Start}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{get\+Y\+Start}]{\setlength{\rightskip}{0pt plus 5cm}const int Touch\+Screen\+Text\+::get\+Y\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_a50372422c5ddb6c9b9f689a1e95e92ae}
+
+
+Gets the ycoordinate of the text. 
+
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate for the text instance. 
+\end{DoxyReturn}
+\hypertarget{class_touch_screen_text_ab276b0e4f90739d052e521d0e2fe5cc2}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!set\+Font\+Size@{set\+Font\+Size}}
+\index{set\+Font\+Size@{set\+Font\+Size}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{set\+Font\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Text\+::set\+Font\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{my\+Font\+Size = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_ab276b0e4f90739d052e521d0e2fe5cc2}
+
+
+Sets the font size of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Font\+Size} & The font size of the text instance. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_text_a5a1bbd3e035ec114da0a341dad341461}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!set\+Text\+Color@{set\+Text\+Color}}
+\index{set\+Text\+Color@{set\+Text\+Color}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{set\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Text\+::set\+Text\+Color (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{my\+Text\+Color = {\ttfamily 0xffff}}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_a5a1bbd3e035ec114da0a341dad341461}
+
+
+Sets the color of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Text\+Color} & The color of the text instance. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_text_ad93fb5b78ee2578fe3730210ba172ee7}{\index{Touch\+Screen\+Text@{Touch\+Screen\+Text}!set\+Text\+Coord@{set\+Text\+Coord}}
+\index{set\+Text\+Coord@{set\+Text\+Coord}!Touch\+Screen\+Text@{Touch\+Screen\+Text}}
+\subsubsection[{set\+Text\+Coord}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Text\+::set\+Text\+Coord (
+\begin{DoxyParamCaption}
+\item[{int}]{my\+X\+Start, }
+\item[{int}]{my\+Y\+Start}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_text_ad93fb5b78ee2578fe3730210ba172ee7}
+
+
+Sets the coordinates of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+X\+Start} & The x-\/coordinate for the text instance. \\
+\hline
+{\em my\+Y\+Start} & The y-\/coordinate for the text instance. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Touch\+Screen\+Strings.\+h\item 
+Touch\+Screen\+Strings.\+cpp\end{DoxyCompactItemize}

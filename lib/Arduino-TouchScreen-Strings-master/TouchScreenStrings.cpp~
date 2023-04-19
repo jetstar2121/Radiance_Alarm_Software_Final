@@ -1,0 +1,74 @@
+/*
+   Geometry.cpp - Library for creating geometry for touch screen.
+   Created by Richard Kirkpatrick, September 3, 2013
+*/
+
+#include "Arduino.h"
+#include "Geometry.h"
+
+#include <stdint.h>  // Library for the Seeed Studio TFT Touch Shield 
+#include <TouchScreen.h>  // Library for the Seeed Studio TFT Touch Shield 
+#include <TFT.h>      // Library for the Seeed Studio TFT Touch Shield 
+
+// --------------------------------------------------------------------------------------------
+// 				Functions for the text class
+// --------------------------------------------------------------------------------------------
+
+// Default constructor
+text::text() : message(""), xstartText(0), ystartText(0), fontText(1), textColor(0xffff) 
+{ 
+  
+}
+  
+// Copy constructor
+text::text(text& otherText) 
+{
+   message = otherText.message; 
+   xstartText = otherText.xstartText;
+   ystartText = otherText.ystartText;
+   fontText = otherText.fontText;
+   textColor = otherText.textColor;
+}
+  
+// Parameter constructor
+text::text(char* myMessage, int myXStartText, int myYStartText, int myFontText, unsigned int myTextColor) : message(myMessage), xstartText(myXStartText), ystartText(myYStartText), fontText(myFontText), textColor(myTextColor)
+{ 
+  
+}
+
+// Set the text for the blocks
+void text::setText(char* myMessage) 
+{ 
+   message = myMessage; 
+}
+ 
+// Set coordinates of text
+void text::setTextCoord(int myXStartText, int myYStartText) 
+{
+   xstartText = myXStartText; 
+   ystartText = myYStartText;
+}
+
+// Set font of text
+void text::setFont(int defaultFontText) 
+{ 
+   fontText = defaultFontText; 
+}
+
+// Set color of text
+void text::setTextColor(unsigned int defaultTextColor) 
+{ 
+   textColor = defaultTextColor; 
+}
+  
+// Access modifiers
+char* text::getMessage() { return message; }
+int text::getXStartText() { return xstartText; }
+int text::getYStartText() { return fontText; }
+int text::getTextColor() { return textColor; }
+  
+// Draw the text
+void text::drawText() 
+{ 
+   Tft.drawString(message, xstartText, ystartText, fontText, textColor);
+}
